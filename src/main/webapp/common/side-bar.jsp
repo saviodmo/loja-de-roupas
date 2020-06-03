@@ -8,7 +8,7 @@
 	<nav id="sidebar">
 		<ul class="list-unstyled">
 			<li><a href=" <c:url value="/"/> ">Principal</a></li>
-			<li><a href=" <c:url value="/catalogo.jsp"/> ">Catalogo</a></li>
+			<li><a href=" <c:url value="/catalogo"/> ">Catalogo</a></li>
 		</ul>
 	</nav>
 </div>

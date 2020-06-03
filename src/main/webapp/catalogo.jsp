@@ -21,6 +21,7 @@
 							<h3>Catalogo</h3>
 						</div>	
 					</div>
+					<h4>${ titulo }</h4>
 					<p>Produtos a serem exibidos daqui a pouco</p>		
 				</div>
 			</div>
