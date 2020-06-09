@@ -55,6 +55,24 @@
 								</div>
 							</c:forEach>
 						</div>
+					
+						<div class="col-6 text-right">
+							<h5>Filtros</h5>
+							
+							<form method="post">
+								<div class="form-group">
+									<select class="form-control" name="categoria">
+										<option value="0">Roupa Masculina</option>
+										<option value="1">Roupa Feminina</option>
+										<option value="2">Roupa Infantil</option>
+									</select>
+								</div>
+								<div>
+									<button class="btn">Filtrar</button>
+								</div>
+							</form>
+							
+						</div>
 					</div>
 				</div>
 			</div>

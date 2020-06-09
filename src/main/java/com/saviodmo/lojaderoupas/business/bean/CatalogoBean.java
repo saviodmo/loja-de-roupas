@@ -43,6 +43,35 @@ public class CatalogoBean {
 		this.roupas = roupas;
 	}
 	
+	public List<RoupaBean> getRoupasFiltradas(String codigoCategoria){
+		
+		if(codigoCategoria == null) {
+			return roupas;
+		}
+		int codigo = Integer.parseInt(codigoCategoria);
+		
+		List<RoupaBean> roupasFiltradas = new ArrayList<>();
+		 
+		
+		for(RoupaBean roupa : roupas) {
+			if (codigo == 0) {
+				if("Roupa Masculina".equals(roupa.getCategoria())) {
+					roupasFiltradas.add(roupa);
+				}
+			}else if (codigo == 1) {
+				if("Roupa Feminina".equals(roupa.getCategoria())) {
+					roupasFiltradas.add(roupa);
+				}
+			} else if (codigo == 2) {
+				if("Roupa Infantil".equals(roupa.getCategoria())) {
+					roupasFiltradas.add(roupa);
+				}
+			}
+		}
+		
+		return roupasFiltradas;
+		
+	}
 	
 	
 }
