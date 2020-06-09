@@ -33,10 +33,10 @@ public class CatalogoController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String codigoCategoria = request.getParameter("categoria");
+		String[] codigosCategoria = request.getParameterValues("categoria");
 		
 		// Envia as roupas do catalogo
-		request.setAttribute("roupas", catalogoBean.getRoupasFiltradas(codigoCategoria));
+		request.setAttribute("roupas", catalogoBean.getRoupasFiltradas(codigosCategoria));
 		request.setAttribute("categorias", CategoriaEnum.values());
 				
 		// Envia a pagina jps na requisição

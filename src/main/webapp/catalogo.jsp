@@ -61,7 +61,7 @@
 							
 							<form method="post">
 								<div class="form-group">
-									<select class="form-control" name="categoria" >
+									<select multiple class="form-control" name="categoria" >
 										<c:forEach items="${ categorias }" var="categoria">
 											<option value="${ categoria.codigo }">${ categoria.nome }</option>
 										</c:forEach>
