@@ -61,10 +61,10 @@
 							
 							<form method="post">
 								<div class="form-group">
-									<select class="form-control" name="categoria">
-										<option value="0">Roupa Masculina</option>
-										<option value="1">Roupa Feminina</option>
-										<option value="2">Roupa Infantil</option>
+									<select class="form-control" name="categoria" >
+										<c:forEach items="${ categorias }" var="categoria">
+											<option value="${ categoria.codigo }">${ categoria.nome }</option>
+										</c:forEach>
 									</select>
 								</div>
 								<div>

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.saviodmo.lojaderoupas.business.bean.CatalogoBean;
+import com.saviodmo.lojaderoupas.business.enums.CategoriaEnum;
 
 /**
  * Servlet implementation class CatalogoController
@@ -36,6 +37,7 @@ public class CatalogoController extends HttpServlet {
 		
 		// Envia as roupas do catalogo
 		request.setAttribute("roupas", catalogoBean.getRoupasFiltradas(codigoCategoria));
+		request.setAttribute("categorias", CategoriaEnum.values());
 				
 		// Envia a pagina jps na requisição
 		request.getRequestDispatcher("/catalogo.jsp").forward(request, response);
@@ -49,5 +51,6 @@ public class CatalogoController extends HttpServlet {
 		doGet(request, response);
 		
 	}
+
 
 }

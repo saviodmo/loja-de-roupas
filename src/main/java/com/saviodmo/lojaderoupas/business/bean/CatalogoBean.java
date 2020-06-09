@@ -5,6 +5,8 @@ import java.util.List;
 
 public class CatalogoBean {
 
+	
+	
 	private List<RoupaBean> roupas;
 	
 	public CatalogoBean() {
