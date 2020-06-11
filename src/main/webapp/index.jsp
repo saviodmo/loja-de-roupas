@@ -10,11 +10,12 @@
 
 <body>
 	<div class="container-fluid">
-		<c:import url="/common/titulo.jsp"/> <!--  Side bar é col-3 -->
+		<c:import url="/common/titulo.jsp"/> 
 		
-		<div class="row">
+		<div class="row flex-xl-nowrap">
 
-			<c:import url="/common/side-bar.jsp"/>
+			<c:import url="/common/side-bar.jsp"/> <!--  Side bar é col-3 -->
+			
 			<div class="col-9">
 				<div class="container">
 					<div class="row">
